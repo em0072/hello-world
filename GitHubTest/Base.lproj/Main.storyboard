@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="height" constant="30" id="9nr-JB-Zyd"/>
                                 </constraints>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="changeTitleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jN0-qp-VQh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.1397160422" blue="0.17826345169999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,6 +53,10 @@
                             <constraint firstItem="X78-Ae-BHM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uTs-99-hdA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="X78-Ae-BHM" id="oSW-YR-2aW"/>
+                        <outlet property="titleTextField" destination="OyW-7Q-RlW" id="JuA-7u-Nsl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

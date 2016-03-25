@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
 let name = "Evgeny"
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,5 +27,10 @@ let name = "Evgeny"
     }
 
 
+    @IBAction func changeTitleButtonPressed(sender: AnyObject) {
+        if titleTextField.text?.characters.count != 0 {
+            titleLabel.text = titleTextField.text!
+        }
+    }
 }
 
